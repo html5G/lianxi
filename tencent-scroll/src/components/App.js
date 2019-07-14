@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect, NavLink } from 'react-router-dom';
-import Recommend from './components/recommend/Recommend';
-import Ranking from './components/ranking/Ranking';
-import Search from './components/search/Search.jsx';
-import Am from './components/am/Am';
-import * as IMG from './scrollImg/Img';
-import './App.styl';
+import Recommend from './recommend/Recommend';
+import Ranking from './ranking/Ranking';
+import Search from './search/Search.jsx';
+import Am from './am/Am';
+import * as IMG from '../scrollImg/Img';
+import '../App.styl';
 
 function App() {
 
@@ -49,13 +49,17 @@ function App() {
         <div className="music-view">
           {/* 路由 */}
           <Switch>
-            <Route path="/components/recommend" component={Recommend} />
-            <Route path="/components/ranking/Ranking" component={Ranking} />
-            <Route path="/components/search/Search" component={Search} />
-            <Route path="/components/am/Am" component={Am} />
+            <Route path="/recommend" component={Recommend} />
+            <Route path="/ranking" component={Ranking} />
+            <Route path="/search" component={Search} />
+            <Route path="/am" component={Am} />
+            {/* <Route path="/" component={Recommend} /> */}
             <Redirect from="/" to="/recommend" />
           </Switch>
         </div>
+      </div>
+      <div className="input">
+        
       </div>
     </Router >
   );
