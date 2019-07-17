@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect, NavLink } from 'react-router-dom';
+// import { Input } from 'antd';
 import Recommend from './recommend/Recommend';
 import Ranking from './ranking/Ranking';
 import Search from './search/Search.jsx';
@@ -8,7 +9,7 @@ import * as IMG from '../scrollImg/Img';
 import '../App.styl';
 
 function App() {
-
+  // const { Search } = Input;
   return (
     <Router>
       <div className="music-tab">
@@ -16,31 +17,31 @@ function App() {
           <div className="tab-item">
             <NavLink className="nav-link" to="recommend">
               <div className="img">
-              <img src={ IMG.Home_Page } className="img_1" />
+                <img src={IMG.Home_Page} className="img_1" alt=""/>
               </div>
               <span>首页</span>
             </NavLink>
           </div>
           <div className="tab-item">
             <NavLink className="nav-link" to="ranking">
-            <div className="img">
-              <img src={ IMG.Classification } className="img_1"/>
+              <div className="img">
+                <img src={IMG.Classification} className="img_1" alt=""/>
               </div>
               <span>分类</span>
             </NavLink>
           </div>
           <div className="tab-item">
             <NavLink className="nav-link" to="search">
-            <div className="img i">
-              <img src={ IMG.Class_Schedule } className="img_1"/> 
+              <div className="img i">
+                <img src={IMG.Class_Schedule} className="img_1" alt=""/>
               </div>
               <span>课程表</span>
             </NavLink>
           </div>
           <div className="tab-item">
             <NavLink className="nav-link" to="am">
-            <div className="img">
-              <img src={ IMG.My } className="img_1"/>
+              <div className="img">
+                <img src={IMG.My} className="img_1" alt=""/>
               </div>
               <span>我的</span>
             </NavLink>
@@ -54,14 +55,11 @@ function App() {
             <Route path="/search" component={Search} />
             <Route path="/am" component={Am} />
             {/* <Route path="/" component={Recommend} /> */}
-            <Redirect from="/" to="/recommend" />
+            <Redirect from="/" to="/ranking" />
           </Switch>
         </div>
       </div>
-      <div className="input">
-        
-      </div>
-    </Router >
+    </Router>
   );
 }
 

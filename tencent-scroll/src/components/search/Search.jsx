@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect, NavLink } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Switch, Redirect, NavLink } from 'react-router-dom';
 class Search extends Component {
     state = {  }
     render() { 
