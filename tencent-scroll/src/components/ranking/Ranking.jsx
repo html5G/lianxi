@@ -42,7 +42,7 @@ class Ranking extends Component {
         return (
             <>
                 {
-                    catlink.forEach((item, index) => {
+                    catlink.map((item, index) => {
                         console.log(index)
                         console.log('000',item.id)
                         if (index === item.id + 1) { 
