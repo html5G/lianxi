@@ -1,4 +1,4 @@
-.header
+.header-o
     position: fixed;
     position relative
     width: 100%;
@@ -6,31 +6,31 @@
     background-size: cover;
     background-color: #23b8ff;
     z-index: 10000;
-    .m-header2 
+    .m-header2-o
         width: auto
         height: 32px
         padding: 12px
         background: inherit
-        .m-header2__search
+        .m-header2__search-o
             line-height: 32px;
             position: relative;
             border-radius: 16px;
             height: 32px;
             background: #f2f2f6;
-            .m-header2__tips 
+            .m-header2__tips-o 
                 color: #fff;
                 background: #65cdff;
                 border-radius: 16px;
-                position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
+                height 33px
                 font-size: 14px;
                 line-height: 32px;
                 text-align: center;
                 justify-content: center;
                 align-items: center;
-                .icon-font 
+                .icon-font-o 
                     position: relative;
                     font-size: 16px;
                     font-weight: 400;
@@ -41,15 +41,24 @@
                     text-transform: none;
                     -webkit-font-smoothing: antialiased;
                     speak: none;
-                .m-header2__input 
-                    margin: 0;
+                .m-header2__input-o 
+                    position absolute
+                    left 0
+                    height 33px
+                    border: 0;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 16px;
+                    font-size: 14px;
                     line-height: 32px;
-                    display: block;
-                    width: 95%;
                     background: transparent;
                     outline: 0;
+                    z-index 99999
                     pointer-events: none;
-    .cat-list 
+
+                   
+    .cat-list-o 
         font-size: 10px;
         overflow: auto;
         .cat-item-wrap 
@@ -64,7 +73,7 @@
                 padding: 0 5px;
                 height: 74px;
                 text-align: center;
-                .current:after 
+            .current:after 
                     content: '';
                     display: block;
                     width: 100%;
@@ -72,7 +81,6 @@
                     left: 0;
                     bottom: 2px;
                     border-bottom: 2px solid #fff;
-
                 .icate 
                     display: block;
                     width: 24px;

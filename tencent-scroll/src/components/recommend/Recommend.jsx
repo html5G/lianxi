@@ -5,7 +5,7 @@ import Swiper from 'swiper'
 import 'swiper/dist/css/swiper.min.css';
 import Lazyload, { forceCheck } from 'react-lazyload';
 import Scroll from '../scroll/Scroll'
-import Input from '../../ami/Input'
+import Put from '../../ami/put'
 // import TABER from '../../ami/API'
 import './Recommend.styl'
 class Recommend extends Component {
@@ -115,16 +115,7 @@ class Recommend extends Component {
         const { refreshScroll } = this.state;
         return (
             <div className="Recommend">
-
-                <div className="InputImg">
-                    <div className="Img">
-                        <img src={IMG.InputImg} style={{ width: 40, height: 40 }} alt="" />
-                    </div>
-                    <div className="input">
-                        {/* <img src="" /> */}
-                        <Input />
-                    </div>
-                </div>
+                <Put />
                 <div className="scroll">
                     <Scroll refresh={refreshScroll} onScroll={forceCheck}>
                         <div>
