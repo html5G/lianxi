@@ -3,7 +3,6 @@ import Vue from 'vue';
 
 const vue = new Vue()
 
-
 axios.defaults.timeout = 10000
 axios.defaults.baseUrl = 'http://localhost:3000'
 
